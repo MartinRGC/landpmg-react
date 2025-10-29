@@ -76,39 +76,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Skills section */}
-        <div className="bg-gradient-to-br from-blue-900 to-purple-900 rounded-2xl p-8 md:p-12 text-white">
-          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-            Mis Habilidades en Software
-          </h3>
-          <p className="text-center text-lg mb-10 opacity-90">
-            Conocimiento de lenguajes de programación y tecnologías
-          </p>
-          
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {[
-              { name: 'Python', level: 85, color: 'bg-blue-500' },
-              { name: 'React', level: 75, color: 'bg-cyan-500' },
-              { name: 'JavaScript', level: 80, color: 'bg-yellow-500' },
-              { name: 'Node.js', level: 70, color: 'bg-green-500' },
-              { name: 'PyTorch', level: 75, color: 'bg-orange-500' },
-              { name: 'Azure', level: 65, color: 'bg-blue-400' }
-            ].map((skill, index) => (
-              <div key={index} className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <span className="font-semibold text-lg">{skill.name}</span>
-                  <span className="text-sm opacity-90">{skill.level}%</span>
-                </div>
-                <div className="h-3 bg-white/20 rounded-full overflow-hidden backdrop-blur-sm">
-                  <div
-                    className={`h-full ${skill.color} rounded-full transition-all duration-1000 ease-out`}
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

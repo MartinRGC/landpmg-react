@@ -6,7 +6,6 @@ import AWSBadges from './components/AWSBadges';
 import ESANSection from './components/ESANSection';
 import FerreyrosSection from './components/FerreyrosSection';
 import TenisMesaSection from './components/TenisMesaSection';
-import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
       <ESANSection />
       <FerreyrosSection />
       <TenisMesaSection />
-      <ContactForm />
       <Footer />
     </div>
   );
