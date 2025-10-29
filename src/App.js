@@ -7,6 +7,7 @@ import ESANSection from './components/ESANSection';
 import FerreyrosSection from './components/FerreyrosSection';
 import TenisMesaSection from './components/TenisMesaSection';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <FerreyrosSection />
       <TenisMesaSection />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

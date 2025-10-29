@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Mail, Github, Twitter, ArrowUp } from 'lucide-react';
+import { Linkedin, Mail, Github, Twitter, ArrowUp, Download, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -9,13 +9,56 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white py-12 px-4">
       <div className="max-w-6xl mx-auto">
+        {/* CTA Section */}
+        <div className="text-center mb-12">
+          <h3 className="text-3xl md:text-4xl font-bold mb-4">
+            ¿Listo para trabajar juntos?
+          </h3>
+          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            Estoy disponible para proyectos de IA, análisis de datos y desarrollo web.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:martingarcia08.00@gmail.com"
+              className="inline-flex items-center justify-center gap-2 bg-white text-blue-900 font-bold px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover:scale-105 shadow-xl"
+            >
+              <Mail size={20} />
+              Enviar Email
+            </a>
+            <a
+              href="https://wa.me/51972533401?text=¡Hola%20Martín!%20Me%20gustaría%20contactarte."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-green-500 text-white font-bold px-8 py-4 rounded-full hover:bg-green-600 transition-all hover:scale-105 shadow-xl"
+            >
+              <MessageCircle size={20} />
+              WhatsApp
+            </a>
+            <a
+              href="/doc/CV-Martin-Garcia.pdf"
+              download
+              className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-blue-900 transition-all hover:scale-105"
+            >
+              <Download size={20} />
+              Descargar CV
+            </a>
+          </div>
+        </div>
+
+        <div className="border-t border-white/20 pt-12 mb-8"></div>
+
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* About section */}
           <div>
             <h3 className="text-2xl font-bold mb-4">Martín García</h3>
-            <p className="text-white/80 leading-relaxed">
+            <p className="text-white/80 leading-relaxed mb-4">
               Ingeniero de Sistemas especializado en IA y Análisis de Datos. 
               Apasionado por crear soluciones innovadoras en salud digital.
+            </p>
+            <p className="text-white/60 text-sm">
+              📍 Lima, Perú<br />
+              📧 martingarcia08.00@gmail.com<br />
+              📱 +51 972 533 401
             </p>
           </div>
 

@@ -1,0 +1,27 @@
+import React from 'react';
+import { MessageCircle } from 'lucide-react';
+
+const WhatsAppButton = () => {
+  const phoneNumber = '51972533401'; // Your WhatsApp number with country code
+  const message = encodeURIComponent('¡Hola Martín! Me gustaría contactarte.');
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
+  return (
+    <a
+      href={whatsappUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl hover:scale-110 transition-all duration-300 group"
+      aria-label="Contactar por WhatsApp"
+    >
+      <MessageCircle size={28} className="animate-pulse" />
+      
+      {/* Tooltip */}
+      <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-sm px-3 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+        ¡Escríbeme por WhatsApp!
+      </span>
+    </a>
+  );
+};
+
+export default WhatsAppButton;
