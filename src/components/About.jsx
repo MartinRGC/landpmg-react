@@ -1,4 +1,3 @@
-import React from 'react';
 import { Brain, Database, Award, Code } from 'lucide-react';
 
 const About = () => {
@@ -33,7 +32,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Acerca de Mí
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
         </div>
 
         {/* Main content */}
@@ -44,13 +43,13 @@ const About = () => {
               Ingeniero de Sistemas
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Egresado de <strong className="text-blue-600">Ingeniería de Sistemas</strong> de la{' '}
-              <strong className="text-blue-600">Universidad Esan</strong> con sólida formación en{' '}
+              Egresado de <strong className="text-primary-600">Ingeniería de Sistemas</strong> de la{' '}
+              <strong className="text-primary-600">Universidad Esan</strong> con sólida formación en{' '}
               <strong>Inteligencia Artificial</strong> y <strong>Análisis de Datos</strong>.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Apasionado por aplicar la tecnología para resolver problemas reales, como en mi 
-              proyecto de <strong className="text-purple-600">segmentación automática de cáncer de pulmón</strong> 
+              proyecto de <strong className="text-primary-600">segmentación automática de cáncer de pulmón</strong>
               {' '}utilizando Deep Learning y Computer Vision.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -66,7 +65,7 @@ const About = () => {
                 key={index}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 border border-gray-100"
               >
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-14 h-14 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
                   <item.icon className="text-white" size={28} />
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h4>

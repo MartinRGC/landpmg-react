@@ -1,9 +1,8 @@
-import React from 'react';
 import esanImage from '../assets/images/esan-inen.jpg';
 
 const ESANSection = () => {
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section id="project" className="py-16 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Título */}
         <div className="text-center mb-10">
@@ -47,31 +46,56 @@ const ESANSection = () => {
 
             {/* Logos de tecnologías: justo debajo del texto del video */}
             <div className="flex justify-center mt-4 gap-4">
-              <img 
-                src="/logos/python.png" 
-                alt="Python" 
-                className="w-12 h-12 object-contain"
-              />
-              <img 
-                src="/logos/react.png" 
-                alt="React" 
-                className="w-12 h-12 object-contain"
-              />
-              <img 
-                src="/logos/azure.png" 
-                alt="Azure" 
-                className="w-12 h-12 object-contain"
-              />
-              <img 
-                src="/logos/nodejs.png" 
-                alt="Node.js" 
-                className="w-12 h-12 object-contain"
-              />
-              <img 
-                src="/logos/pytorch.png" 
-                alt="PyTorch" 
-                className="w-12 h-12 object-contain"
-              />
+              <div className="group relative">
+                <img 
+                  src="/logos/python.png" 
+                  alt="Python" 
+                  className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-125 group-hover:-translate-y-2"
+                />
+                <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  Python
+                </span>
+              </div>
+              <div className="group relative">
+                <img 
+                  src="/logos/react.png" 
+                  alt="React" 
+                  className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-125 group-hover:-translate-y-2"
+                />
+                <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  React
+                </span>
+              </div>
+              <div className="group relative">
+                <img 
+                  src="/logos/azure.png" 
+                  alt="Azure" 
+                  className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-125 group-hover:-translate-y-2"
+                />
+                <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  Azure
+                </span>
+              </div>
+              <div className="group relative">
+                <img 
+                  src="/logos/nodejs.png" 
+                  alt="Node.js" 
+                  className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-125 group-hover:-translate-y-2"
+                />
+                <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  Node.js
+                </span>
+              </div>
+              <div className="group relative">
+                <img 
+                  src="/logos/pytorch.png" 
+                  alt="PyTorch" 
+                  className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-125 group-hover:-translate-y-2"
+                />
+                <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                  PyTorch
+                </span>
+              </div>
             </div>
           </div>
         </div>

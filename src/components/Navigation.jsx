@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 
 const Navigation = () => {
@@ -58,7 +58,7 @@ const Navigation = () => {
             href="#home"
             onClick={(e) => handleNavClick(e, '#home')}
             className={`text-2xl font-bold transition-colors ${
-              isScrolled ? 'text-blue-900' : 'text-white'
+              isScrolled ? 'text-primary-900' : 'text-white'
             }`}
           >
             Martín García
@@ -71,7 +71,7 @@ const Navigation = () => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className={`font-medium transition-colors hover:text-blue-500 ${
+                className={`font-medium transition-colors hover:text-primary-600 ${
                   isScrolled ? 'text-gray-700' : 'text-white'
                 }`}
               >
@@ -79,16 +79,17 @@ const Navigation = () => {
               </a>
             ))}
             <a
-              href="/doc/CV-Martin-Garcia.pdf"
-              download
+              href="https://docs.google.com/document/d/1iAhSGBlmXg-iAuEaJFmo866DGvKk657z/edit?usp=sharing&ouid=112717986879074681665&rtpof=true&sd=true"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`flex items-center gap-2 px-6 py-2 rounded-full font-semibold transition-all hover:scale-105 ${
                 isScrolled
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
-                  : 'bg-white text-blue-900'
+                  ? 'bg-accent-500 text-white hover:bg-accent-600'
+                  : 'bg-white text-primary-900'
               }`}
             >
               <Download size={18} />
-              Descarga mi CV
+              Mi CV
             </a>
           </div>
 
@@ -113,18 +114,19 @@ const Navigation = () => {
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-gray-700 font-medium hover:text-blue-600 transition-colors py-2"
+                  className="text-gray-700 font-medium hover:text-primary-600 transition-colors py-2"
                 >
                   {link.name}
                 </a>
               ))}
               <a
-                href="/doc/CV-Martin-Garcia.pdf"
-                download
-                className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition-all"
+                href="https://docs.google.com/document/d/1iAhSGBlmXg-iAuEaJFmo866DGvKk657z/edit?usp=sharing&ouid=112717986879074681665&rtpof=true&sd=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 bg-accent-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-accent-600 hover:scale-105 transition-all"
               >
                 <Download size={18} />
-                Descarga mi CV
+                Mi CV
               </a>
             </div>
           </div>

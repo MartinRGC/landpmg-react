@@ -1,5 +1,3 @@
-// src/components/TenisMesaSection.jsx
-import React from 'react';
 import pingpongImage from '../assets/images/pingpong.png';
 
 const TenisMesaSection = () => {
@@ -11,7 +9,7 @@ const TenisMesaSection = () => {
             Liderazgo y Deporte
           </h2>
           <p className="text-xl text-gray-600 mb-2">Training Pong Club · 2024</p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -27,21 +25,21 @@ const TenisMesaSection = () => {
           </div>
 
           {/* Texto a la derecha */}
-          <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 border border-green-100">
+          <div className="bg-gradient-to-br from-primary-50 to-blue-50 rounded-2xl p-8 border border-primary-100">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
               Fundador – Training Pong Club
             </h3>
             <ul className="text-gray-700 space-y-4">
               <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 flex-shrink-0"></div>
                 <span className="text-base leading-relaxed">Creación de un espacio inclusivo para practicar tenis de mesa, abierto a expertos y principiantes.</span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-accent-500 rounded-full mt-2 flex-shrink-0"></div>
                 <span className="text-base leading-relaxed">Fomento del liderazgo colaborativo, la constancia y el trabajo en equipo.</span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-primary-600 rounded-full mt-2 flex-shrink-0"></div>
                 <span className="text-base leading-relaxed">Promoción del deporte como herramienta de integración y desarrollo personal.</span>
               </li>
             </ul>

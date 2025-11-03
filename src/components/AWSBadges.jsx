@@ -1,4 +1,3 @@
-import React from 'react';
 import cloudFoundationsImg from '../assets/images/aws-academy-cloud-foundations.png';
 import genAIFoundationsImg from '../assets/images/aws-academy-generative-ai-foundations.png';
 import cloudQuestImg from '../assets/images/aws-cloud-quest-cloud-practitioner.png';
@@ -29,7 +28,7 @@ const AWSBadges = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section id="certifications" className="py-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-10">
           {/* Bloque 2x2 de insignias */}
@@ -40,13 +39,16 @@ const AWSBadges = () => {
                 href={badge.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-52 h-52 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition"
+                className="group block w-52 h-52 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 relative"
               >
                 <img
                   src={badge.img}
                   alt={badge.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
+                  <span className="text-white font-semibold text-sm text-center px-2">{badge.name}</span>
+                </div>
               </a>
             ))}
           </div>

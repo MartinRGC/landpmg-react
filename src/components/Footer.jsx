@@ -1,5 +1,4 @@
-import React from 'react';
-import { Linkedin, Mail, Github, Twitter, ArrowUp, Download, MessageCircle } from 'lucide-react';
+import { Linkedin, Mail, Github, ArrowUp, Download, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white py-12 px-4">
+    <footer id="contact" className="bg-gradient-to-br from-gray-900 via-primary-900 to-primary-950 text-white py-12 px-4">
       <div className="max-w-6xl mx-auto">
         {/* CTA Section */}
         <div className="text-center mb-12">
@@ -20,7 +19,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:martingarcia08.00@gmail.com"
-              className="inline-flex items-center justify-center gap-2 bg-white text-blue-900 font-bold px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover:scale-105 shadow-xl"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary-900 font-bold px-8 py-4 rounded-full hover:bg-gray-100 transition-all hover:scale-105 shadow-xl"
             >
               <Mail size={20} />
               Enviar Email
@@ -35,12 +34,13 @@ const Footer = () => {
               WhatsApp
             </a>
             <a
-              href="/doc/CV-Martin-Garcia.pdf"
-              download
-              className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-blue-900 transition-all hover:scale-105"
+              href="https://docs.google.com/document/d/1iAhSGBlmXg-iAuEaJFmo866DGvKk657z/edit?usp=sharing&ouid=112717986879074681665&rtpof=true&sd=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-primary-900 transition-all hover:scale-105"
             >
               <Download size={20} />
-              Descargar CV
+              Mi CV
             </a>
           </div>
         </div>
@@ -102,7 +102,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/martin-garcol"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white hover:text-blue-900 transition-all hover:scale-110"
+                className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white hover:text-primary-900 transition-all hover:scale-110"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
@@ -115,22 +115,13 @@ const Footer = () => {
                 <Mail size={20} />
               </a>
               <a
-                href="https://github.com/martin-garcol"
+                href="https://github.com/MartinRGC"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white hover:text-blue-900 transition-all hover:scale-110"
                 aria-label="GitHub"
               >
                 <Github size={20} />
-              </a>
-              <a
-                href="https://twitter.com/martin-garcol"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white hover:text-blue-900 transition-all hover:scale-110"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
               </a>
             </div>
           </div>
@@ -144,7 +135,7 @@ const Footer = () => {
           
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-2 rounded-full hover:bg-white hover:text-blue-900 transition-all hover:scale-105"
+            className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-2 rounded-full hover:bg-white hover:text-primary-900 transition-all hover:scale-105"
             aria-label="Volver arriba"
           >
             <ArrowUp size={18} />
