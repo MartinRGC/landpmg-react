@@ -54,7 +54,7 @@ const About = () => {
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               Mi enfoque combina conocimientos técnicos avanzados con una visión práctica para 
-              desarrollar soluciones innovadoras en el campo de la salud digital.
+              desarrollar soluciones innovadoras.
             </p>
           </div>
 
