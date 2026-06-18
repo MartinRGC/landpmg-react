@@ -84,7 +84,7 @@ const Header = () => {
               
               {/* Floating stat badges */}
               <div className="absolute -top-4 -left-4 bg-white text-primary-900 rounded-2xl shadow-xl p-4 animate-bounce-slow">
-                <div className="text-3xl font-bold text-primary-600">2025</div>
+                <div className="text-3xl font-bold text-primary-600">2026</div>
                 <div className="text-sm font-medium">Egresado</div>
               </div>
               
