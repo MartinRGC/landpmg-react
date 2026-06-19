@@ -56,9 +56,9 @@ const Footer = () => {
               Apasionado por crear soluciones innovadoras en salud digital.
             </p>
             <p className="text-white/60 text-sm">
-              📍 Lima, Perú<br />
-              📧 martingarcia08.00@gmail.com<br />
-              📱 +51 972 533 401
+               Lima, Perú<br />
+               martingarcia08.00@gmail.com<br />
+               +51 972 533 401
             </p>
           </div>
 
@@ -130,7 +130,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/60 text-sm text-center md:text-left">
-            © 2025 Martín García. Todos los derechos reservados.
+            © 2026 Martín García. Todos los derechos reservados.
           </p>
           
           <button
