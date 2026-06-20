@@ -82,18 +82,17 @@ const Header = () => {
                 className="w-64 h-auto md:w-80 lg:w-96 rounded-2xl shadow-2xl object-cover"
               />
               
-              {/* Floating stat badges */}
+              {/* Floating stat badges
               <div className="absolute -top-4 -left-4 bg-white text-primary-900 rounded-2xl shadow-xl p-4 animate-bounce-slow">
                 <div className="text-3xl font-bold text-primary-600">2026</div>
                 <div className="text-sm font-medium">Egresado</div>
-              </div>
+              </div> */}
               
               <div className="absolute -bottom-4 -right-4 bg-accent-500 text-white rounded-2xl shadow-xl p-4">
                 <div className="flex items-center gap-2">
                   <span className="text-3xl font-bold">4+</span>
                   <div className="text-xs leading-tight">
-                    <div>Cursos</div>
-                    <div>AWS</div>
+                    <div>AWS Learner</div>
                   </div>
                 </div>
               </div>
