@@ -92,7 +92,7 @@ const Header = () => {
                 <div className="flex items-center gap-2">
                   <span className="text-3xl font-bold">4+</span>
                   <div className="text-xs leading-tight">
-                    <div>Certificaciones</div>
+                    <div>Cursos</div>
                     <div>AWS</div>
                   </div>
                 </div>

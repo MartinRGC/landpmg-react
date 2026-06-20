@@ -55,9 +55,9 @@ const AWSBadges = () => {
 
           {/* Texto descriptivo */}
           <div className="text-center md:text-left max-w-md">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Certificaciones AWS</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Cursos AWS</h3>
             <p className="text-gray-700 mb-4">
-              Cuatro certificaciones oficiales en Cloud Computing y Generative AI, obtenidas en 2025.
+              Cuatro cursos oficiales en Cloud Computing y Generative AI, obtenidos en 2025.
             </p>
             <p className="text-sm text-gray-500">
               Haz clic en cualquier insignia para ver el detalle en Credly.
