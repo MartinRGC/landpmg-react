@@ -19,11 +19,11 @@ const Header = () => {
               Martín Raid García Collahuaso
             </h1>
             <h2 className="text-xl md:text-2xl mb-4 opacity-95 font-medium">
-              Ing. Sistemas
+              Systems Engineering Graduate
             </h2>
             <p className="text-base md:text-lg mb-2 opacity-90">Lima, Perú</p>
             <p className="text-lg md:text-xl mb-8 opacity-90 leading-relaxed max-w-2xl">
-              IA y Análisis de Datos | Universidad Esan
+              Cloud • Deployment • DevOps Learning Path
             </p>
 
             {/* Action buttons */}
